@@ -22,11 +22,12 @@ apiServer.use(bodyParser.json());
 
 //REST API
 apiServer.post('/presentation-remote', function(request, response){
+  console.log("endpoint hit");
   if(request.body.api_key == "alexander"){
     var page = request.body.page_number;
     sockets.emit("presentation-page", page);
-    response.status(200).send({data: 'ok'});
   }
+  response.status(200).send({data: 'ok'});
 })
 
 //Open ports for API and sockets

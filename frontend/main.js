@@ -23,7 +23,7 @@ buildParams = function(page){
 
 sendRequest = function(params, callback){
   var http = new XMLHttpRequest();
-  http.open("POST", "http://localhost:3000/presentation-remote", true);
+  http.open("POST", "https://lucasesmith.com/presentation-remote", true);
   http.setRequestHeader("Content-type", "application/json");
   http.onreadystatechange = function() {
     if (http.readyState == 4) {

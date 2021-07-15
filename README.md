@@ -1,4 +1,4 @@
-Best used with the presentation frontend located at : https://github.com/FriedMicro/presentation
+This server emits a websocket on the channel "presentation-server" which is the index of the desired slide.
 
 Change the password variable in config.js to whatever you would like.
 
